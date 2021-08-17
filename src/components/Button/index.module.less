@@ -1,0 +1,30 @@
+@import '../../assets/css/global.module.less';
+
+// button
+.btn {
+    padding: 0.5rem 1rem;
+    font-size: 14px;
+    background: #fff;
+    color: #333;
+    border: 1px solid #adadad;
+    border-radius: 2px;
+  
+    &:hover {
+      background-color: #e6e6e6;
+    }
+  }
+  
+  .btn-plain {
+    background: transparent;
+    color: #000;
+    border-color: transparent;
+  }
+  .btn-primary {
+    background: @primary-color;
+    color: #fff;
+    border-color: transparent;
+  
+    &:hover {
+      background-color: @primary-color-hover;
+    }
+  }

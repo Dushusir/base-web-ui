@@ -1,0 +1,62 @@
+@import '../../assets/css/global.module.less';
+
+.select-wrapper {
+    width: 120px;
+    position: relative;
+    .select-header {
+        width: 100%;
+        line-height: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: white;
+        border: 1px solid lightgray;
+        padding: 5px;
+
+        .select-tag {
+            font-size: 12px;
+            margin-right: 5px;
+            background-color: #ddd;
+            .select-text {
+                padding: 1px 5px;
+            }
+            .select-close {
+                padding: 1px 5px;
+                cursor: pointer;
+                border-left: 2px solid #eee;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .select-list {
+        position: absolute;
+        z-index: 1000;
+        display: none;
+        width: 100%;
+        border: 1px solid transparent;
+        border-radius: 4px;
+        background-color: white;
+        box-shadow: 0 2px 6px 2px rgb(60 64 67 / 15%);
+        font-size: @font-size-base;
+
+        .select-list-item {
+            width: 100%;
+            height: 2rem;
+            display: flex;
+            align-items: center;
+            padding: 0 0.8rem;
+            border: 0px;
+            white-space: nowrap;
+            background-color: inherit;
+
+            &:hover {
+                background-color: #f1f3f4;
+            }
+        }
+        .select-icon:after {
+            content: '✔';
+            position: absolute;
+            right: 10px;
+        }
+    }
+}

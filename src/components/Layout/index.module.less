@@ -1,0 +1,33 @@
+@import '../../assets/css/global.module.less';
+
+.layout-wrapper {
+    height: 100%;
+    display: flex;
+    flex: auto;
+    flex-direction: column;
+    min-height: 0;
+    background: #d4d6da;
+    &&-has-sider {
+        flex-direction: row;
+    }
+}
+.header-wrapper {
+    flex: 0 0 auto;
+    height: 10%;
+    background: aquamarine;
+}
+.footer-wrapper {
+    flex: 0 0 auto;
+    height: 10%;
+    background: yellow;
+}
+.content-wrapper {
+    flex: auto;
+    flex: 1;
+    background: dodgerblue;
+}
+.sider-wrapper {
+    flex-direction: row;
+    width: 10%;
+    background: lightcoral;
+}
